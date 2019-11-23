@@ -1,0 +1,33 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "GillSans";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+
+.section__title {
+  margin-bottom: 4.4rem;
+  color: #064e63;
+  font-family: 'GillSans-SemiBold';
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.text {
+  color: #242d2f;
+  font-family: 'GillSans';
+  font-size: 2rem;
+  font-weight: 300;
+}

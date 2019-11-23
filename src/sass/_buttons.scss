@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  outline: none;
+
+  &--gradient {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 38.4rem;
+    margin: auto;
+    padding: 2rem 4.2rem;
+    border-radius: 3rem;
+    background-color: #ffffff;
+    background-image: linear-gradient(-8deg, #101b26 0%, #065065 99%, #065065 100%);
+
+    color: #ffffff;
+    font-family: "GillSans";
+    font-size: 2rem;
+    font-weight: 400;
+
+  }
+}

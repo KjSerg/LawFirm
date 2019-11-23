@@ -1,0 +1,118 @@
+.header {
+  background-color: #ffffff;
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-bottom: 2px solid rgba(#064e63, 0.28);
+  }
+
+
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2.4rem;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 1.8rem;
+
+    &:first-child {
+      margin-right: 1rem;
+    }
+
+    color: #adadad;
+    font-family: 'GillSans-Light';
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: none;
+
+    transition: 0.5s ease;
+
+    &:hover, &.active {
+      color: #fdfeff;
+      background-color: #ca9a22;
+      background-image: linear-gradient(-8deg, #101b26 0%, #065065 99%, #065065 100%);
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+
+    &__link {
+      display: flex;
+      justify-content: flex-end;
+
+      width: 100%;
+      max-width: 23rem;
+
+      font-family: 'GillSans-Light';
+      font-weight: 300;
+      line-height: 3rem;
+      color: #122233;
+      font-size: 1.8rem;
+      text-decoration: none;
+      text-align: right;
+
+      strong {
+        font-weight: 400;
+        font-family: "GillSans";
+      }
+
+    }
+
+    &__icon {
+      display: inline-block;
+      width: 2rem;
+      height: 2rem;
+      margin-top: 0.5rem;
+      object-fit: contain;
+      margin-right: 1.4rem;
+    }
+  }
+
+  &-navigation {
+
+    padding: 1.5rem 2rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a {
+        color: #122233;
+        font-family: "GillSans";
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 0.027rem;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+.logo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  max-width: 30.6rem;
+  max-height: 10rem;
+
+  &-img {
+    max-width: 100%;
+  }
+}

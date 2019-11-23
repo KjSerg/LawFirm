@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front End Application</title>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-container">
+            <div class="header-top">
+                <a href="/" class="logo">
+                    <img src="img/logo.png" class="logo-img" alt="">
+                </a>
+                <div class="header-links">
+                    <a href="#" class="header__link">Гражданам</a>
+                    <a href="#" class="header__link">Бизнесу</a>
+                </div>
+                <div class="header-contacts">
+                    <a href="mailto:sibuk@sib-uk.ru" class="header-contacts__link">
+                        <img src="img/mail.png" class="header-contacts__icon" alt="">
+                        <strong>sibuk@sib-uk.ru</strong>
+                    </a>
+                    <a href="#" class="header-contacts__link">
+                        <img src="img/location.png" class="header-contacts__icon" alt="">
+                        г. Омск ул. Куйбышева, 43,<br> оф. 210, 2 этаж
+                    </a>
+                    <a href="tel:(3812) 39-40-40" class="header-contacts__link">
+                        <img src="img/phone.png" class="header-contacts__icon" alt="">
+                        <strong>(3812) 39-40-40</strong>
+                    </a>
+                </div>
+            </div>
+            <div class="header-navigation">
+                <ul>
+                    <li>
+                        <a href="#">О компании</a>
+                    </li>
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Стоимость</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Медиацентр</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#">Оплата</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+    <section class="forecast-section" id="forecast" style="background-image:url(img/forecast-bg.jpg);">
+        <div class="forecast-logo">
+            <img src="img/logo-sec.png" alt="">
+        </div>
+        <div class="container">
+            <div class="forecast" style="background-image: url(img/forecast-layer-bg.jpg);">
+
+                <div class="forecast-person">
+                    <img src="img/person_1.png" class="forecast-person__img" alt="">
+                    <div class="forecast-person__text">
+                        <h2 class="forecast-person__name">
+                            ГОНАГО ДМИТРИЙ
+                        </h2>
+                        <h4 class="forecast-person__position">
+                            Управляющий партнёр
+                        </h4>
+                    </div>
+                </div>
+
+                <h1 class="forecast__title">
+                    ВОЗНИК ИЛИ НАМЕЧАЕТСЯ СУДЕБНЫЙ СПОР?
+                </h1>
+                <h3 class="forecast__description">
+                    Нужен представитель в суд? <br>
+                    Оцените нашу профессиональную компетентность, опишите<br>
+                    ситуацию и получите бесплатный прогноз по вашему делу!
+                </h3>
+
+                <form  class="forecast-form">
+                    <textarea name="text" placeholder="для бесплатной консультации опишите вашу ситуацию" class="forecast__textarea"></textarea>
+                    <a href="#get-forecast" class="fancybox--text forecast__button button--gradient">
+                        ПОЛУЧИТЬ ПРОГНОЗ ПО ДЕЛУ
+                    </a>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="section citizens-section inform-section inform-section--hidden-text" id="citizens">
+        <div class="container">
+            <div class="citizens">
+                <h3 class="section__title">
+                    ЮРИДИЧЕСКАЯ ПОМОЩЬ ГРАЖДАНАМ
+                </h3>
+                <div class="text inform-section__text" >
+                    <p>
+                        Предыдущий опыт работы в коммерческих организациях, юридических фирмах и госорганах позволил побывать всем нашим юристам «на разных сторонах баррикад».
+                        <br>
+                        Постоянное повышение своей квалификации на соответствующих курсах, а также интенсивная судебная практика позволяют с уверенностью утверждать, что у наших юристов полное понимание различных судебных процессов. <br>
+                        Поэтому мы предоставим подробный анализ вашей правовой ситуации и оптимальный вариант её решения. Если вариант решения в вашу пользу отсутствует, то без ложных обещаний, мы честно и обоснованно об этом укажем.
+                    </p>
+                </div>
+                <a href="#"
+                   data-open="ПОДРОБНЕЕ..."
+                   data-close="СВЕРНУТЬ"
+                   class="button--gradient inform-section__button">
+                    ПОДРОБНЕЕ...
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section keys-section" id="citizens-keys" style="background-image: url(img/map.png);">
+        <div class="container">
+            <div class="keys">
+                <h3 class="keys__title">
+                    КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ПРАКТИКИ
+                </h3>
+                <ul class="keys-list">
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-1.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Защита в суде
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-2.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Семейные споры
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-3.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Банкротство физических лиц
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-4.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Защита прав военнослужащих
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-5.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Жилищные споры
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-6.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                               Наследственные споры
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-7.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                               Возмещение вреда здоровью
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-8.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                               Защита прав потребителей
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-9.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                               Защита прав заемщиков
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-10.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                               Возврат страховок
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-11.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                              Земельные споры
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i-12.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                              Автоюрист
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section business-section inform-section inform-section--hidden-text" id="business-assistance">
+        <div class="container">
+            <div class="business">
+                <h3 class="section__title">
+                    ЮРИДИЧЕСКАЯ ПОМОЩЬ БИЗНЕСУ
+                </h3>
+                <div class="text inform-section__text" >
+                    <p>
+                        Предыдущий опыт работы в коммерческих организациях, юридических фирмах и госорганах позволил побывать всем нашим юристам «на разных сторонах баррикад».
+                        <br>
+                        Постоянное повышение своей квалификации на соответствующих курсах, а также интенсивная судебная практика позволяют с уверенностью утверждать, что у наших юристов полное понимание различных судебных процессов.
+                        <br>
+                        Поэтому мы предоставим подробный анализ вашей правовой ситуации и оптимальный вариант её решения. Если вариант решения в вашу пользу отсутствует, то без ложных обещаний, мы честно и обоснованно об этом укажем.
+                    </p>
+                </div>
+                <a href="#"
+                   data-open="ПОДРОБНЕЕ..."
+                   data-close="СВЕРНУТЬ"
+                   class="button--gradient inform-section__button">
+                    ПОДРОБНЕЕ...
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section keys-section" id="business-keys" style="background-image: url(img/city.png);">
+        <div class="container">
+            <div class="keys">
+                <h3 class="keys__title">
+                    КЛЮЧЕВЫЕ НАПРАВЛЕНИЯ ПРАКТИКИ
+                </h3>
+                <ul class="keys-list keys-list--business">
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i1.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Взыскание долгов <br>
+                                (дебиторская задолженность)
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i2.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Взыскание долгов <br>
+                                (при ликвидации контрагента)
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i3.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Корпоративные споры
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i4.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Защита от субсидиарной <br> ответственности
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i5.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Защита при оспаривании сделок
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i6.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Юридический аутсорсинг
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i7.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Банкротство юридических лиц
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i8.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Проверка благонадежности <br> контрагента
+                            </span>
+                        </a>
+                    </li>
+                    <li class="keys-list__item">
+                        <a href="#" class="keys-list__link">
+                            <span class="keys-list__icon">
+                                <img src="img/i9.png" alt="">
+                            </span>
+                            <span class="keys-list__text">
+                                Ознакомление с материалами дела
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section consult-section" id="consult">
+        <div class="container">
+            <div class="consult">
+                <div class="consult-decoration">
+                    <div class="consult-decoration__img">
+                        <div class="consult-decoration__text">
+                            <a href="tel:(3812) 39-40-40" class="consult-decoration__number">
+                                (3812) 39-40-40
+                            </a>
+                            <h6 class="consult-decoration__name">
+                                Сибирская юридическая <br>
+                                компания
+                            </h6>
+                        </div>
+
+                        <img src="img/iphone.png" alt="">
+                    </div>
+                </div>
+                <div class="consult-content">
+                    <h3 class="section__title consult__title">
+                        Посоветуйтесь с нами
+                    </h3>
+                    <ul class="consult-list">
+                        <li class="consult-list__item">
+                            Какая реальная перспектива по Вашему делу
+                        </li>
+                        <li class="consult-list__item">
+                            Как правильно действовать
+                        </li>
+                        <li class="consult-list__item">
+                            Какую стратегию выбрать, чтобы увеличить шансы на успешный исход процессов
+                        </li>
+                    </ul>
+
+                    <a href="#get-forecast" class="fancybox button--gradient consult__button">
+                        ПОСОВЕТОВАТЬСЯ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<form
+        action="mail.php"
+        class="modal form modal-get-forecast"
+        style="background-image: url(img/forecast-layer-bg.jpg)"
+        id="get-forecast">
+    <input type="hidden" name="project_name" value="project_name">
+    <input type="hidden" name="admin_email" value="admin_email">
+    <input type="hidden" name="form_subject" value="form_subject">
+
+
+    <h6 class="modal-get-forecast__title forecast__title">
+        ПОЛУЧИТЬ ПРОГНОЗ ПО ДЕЛУ
+    </h6>
+
+    <label class="modal-get-forecast__label">
+        <input type="text" class="modal-get-forecast__input" name="Имя" placeholder="Ваше имя">
+    </label>
+    <label class="modal-get-forecast__label">
+        <input type="tel" class="modal-get-forecast__input" name="Телефон" placeholder="Ваш номер телефона">
+    </label>
+    <input type="hidden" class="text-js" name="text" value="">
+    <div class="modal-get-forecast__text">
+        <p>
+            Нажимая кнопку «Отправить», Вы автоматически соглашаетесь <br>
+            с политикой конфиденциальности и даете свое согласие <br>
+            на обработку персональных данных
+        </p>
+    </div>
+
+    <a href="#" class="button--gradient modal-get-forecast__button">
+        ОТПРАВИТЬ
+    </a>
+
+</form>
+</body>
+<script src="js/bundle.js"></script>
+
+</html>

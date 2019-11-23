@@ -1,0 +1,28 @@
+.inform-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  &__text {
+    position: relative;
+    opacity: 1;
+
+    margin-bottom: 4rem;
+    overflow: visible;
+    transition: 0.3s ease;
+  }
+  &__button {
+    width: 100%;
+    max-width: 26.4rem;
+    padding: 2.2rem 6.8rem;
+  }
+
+  &--hidden-text {
+    .inform-section__text {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+
+      overflow: hidden;
+    }
+  }
+}
