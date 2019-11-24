@@ -16,6 +16,9 @@
 
     width: 100%;
     max-width: 88rem;
+    @media (max-width: 1023px) {
+      max-width: 100%;
+    }
     &__item {
       position: relative;
       display: flex;
@@ -29,6 +32,14 @@
       max-width: 22rem;
       max-height: 30.9rem;
       margin-right: 6.5rem;
+      img {
+        @media (max-width: 1199px) {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
     }
 
     &-container {
@@ -45,6 +56,7 @@
         background-repeat: no-repeat;
         background-position:center;width: 8.2rem;height: 15.8rem;
         top: 0;
+        background-size:contain;
       }
     }
     &__text {
@@ -74,6 +86,8 @@
       background-position:center;
       background-repeat: no-repeat;
 
+      background-size:contain;
+
       &:before {
         display: none;
       }
@@ -85,7 +99,7 @@
       background-image: url('../img/arr-r.png');
       background-position:center;
       background-repeat: no-repeat;
-
+      background-size:contain;
       &:before {
         display: none;
       }
@@ -95,11 +109,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 1023px) {
+      flex-direction: column;
+    }
   }
   &-list {
     width: 100%;
     max-width: 17.1rem;
     margin-left: 12rem;
+    @media (max-width: 1023px) {
+      //display: flex;
+      margin: 2rem auto;
+    }
 
     &__item {
       display: inline-block;

@@ -8,6 +8,10 @@
 
     padding: 5.7rem 17rem;
 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
     &__title {
       margin-bottom: 2.8rem;
     }
@@ -30,6 +34,7 @@
       font-family: "GillSans";
       font-size: 1.8rem;
       font-weight: 300;
+      outline: none;
 
       &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 

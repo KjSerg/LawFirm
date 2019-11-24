@@ -1,0 +1,142 @@
+.footer {
+  overflow: hidden;
+  &-top {
+    display: flex;
+
+  }
+  h6 {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: 'GillSans-SemiBold';
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  &-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 5.4rem;
+    padding-bottom: 4.5rem;
+  }
+  &-list {
+    width: 100%;
+    max-width: 22.3rem;
+    margin-right: 5rem;
+    @media (max-width: 1023px) {
+      margin-right: 2rem;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+
+
+
+    li {
+      margin-bottom: 2rem;
+      a {
+        color: #efefef;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1.5rem;
+    width: 100%;
+    max-width: 8.3rem;
+    padding: 4.9rem 1.7rem;
+    background-color: #0e1f28;
+  }
+
+  &-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2.5rem;
+    img {
+      width: 1005px;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-contacts {
+    position: relative;
+    padding-top: 5.4rem;
+    padding-left: 3.5rem;
+    text-align: right;
+
+
+    color: #efefef;
+    font-family: 'GillSans-Light';
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3.4rem;
+
+    &:after {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      background-color: #064e63;
+
+      width: 300%;
+      height: 100%;
+
+      left: 0;
+      top: 0;
+    }
+    a {
+      color: #efefef;
+      font-family: 'GillSans-Light';
+      font-size: 2rem;
+      font-weight: 300;
+    }
+
+    strong {
+      font-family: 'GillSans-SemiBold';
+    }
+    p, h6 {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &-logo{
+
+    width: 30.6rem;
+    height: 10rem;
+  }
+  &-bottom {
+    &-container {
+      display: flex;
+      padding-top: 4.5rem;
+      padding-bottom: 3rem;
+    }
+
+    &-text {
+      width: 100%;
+      max-width: 73.1rem;
+      margin-left: 18.9rem;
+      text-align: right;
+      color: #1b325c;
+      font-family: 'GillSans-Light';
+      font-size: 1.4rem;
+      font-weight: 300;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: #1b325c;
+      font-family: "GillSans";
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}

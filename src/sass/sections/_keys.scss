@@ -74,9 +74,17 @@
         max-width: 33%;
         margin-left: 0;
         margin-right: 0;
+        @media (max-width: 1023px) {
+          max-width: 30%;
+         padding: 0 1rem;
+        }
       }
       .keys-list__link {
         text-align: center;
+        @media (max-width: 1023px) {
+          white-space: normal;
+        }
+
       }
     }
   }

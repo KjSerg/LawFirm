@@ -33,6 +33,10 @@
        background-color: #064e63;
 
        transform: skew(15deg,0) translateX(50%);
+
+       @media (max-width: 1023px) {
+         right: -3rem;
+       }
      }
   }
 
@@ -56,6 +60,10 @@
       background-repeat: repeat-x;
       background-position: center;
       height: 5px;
+
+      @media (max-width: 1023px) {
+        width: 25%;
+      }
     }
     &__name {
       width: auto;

@@ -1,9 +1,16 @@
 html {
   font-size: 10px;
+  @media (max-width: 1199px) {
+    font-size: 8px;
+  }
 }
 
 body {
   font-family: "GillSans";
+  //overflow-x: hidden;
+}
+main {
+  overflow: hidden;
 }
 
 * {

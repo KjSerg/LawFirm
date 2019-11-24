@@ -31,6 +31,9 @@
       height: 100%;
       top: 0;
       left: 95%;
+      @media (max-width: 1023px) {
+        left: 90%;
+      }
     }
 
     &__item {
@@ -41,6 +44,11 @@
       padding: 2.5rem 6rem;
       height: 10rem;
       background-color: #faf7f1;
+
+      @media (max-width: 1023px) {
+        padding: 0.5rem 2rem;
+        background-color: transparent;
+      }
 
       &:after {
         position: absolute;
@@ -153,6 +161,11 @@
       font-family: 'GillSans-Light';
       font-size: 2rem;
       font-weight: 300;
+      @media (max-width: 1023px) {
+        br {
+          display: none;
+        }
+      }
     }
     &__image {
       width: 100%;
