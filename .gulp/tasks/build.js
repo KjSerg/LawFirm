@@ -8,7 +8,7 @@ gulp.task('build', () => {
         'html',
         'styles',
         'scripts',
-        'images',
+        // 'images',
         'fonts'
     );
     config.logEnvironment();

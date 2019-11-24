@@ -12,7 +12,7 @@ let config = {
             html: 'build/',
             js: 'build/js/',
             css: 'build/css/',
-            img: 'build/img/',
+            // img: 'build/img/',
             fonts: 'build/fonts/'
         },
         src: {
@@ -20,7 +20,7 @@ let config = {
             js: 'src/js/*.js',
             css: 'src/sass/**/*.scss',
             cssLibs: 'src/css/libs/*.css',
-            img: 'src/img/**/*.*',
+            // img: 'src/img/**/*.*',
             fonts: 'src/fonts/**/*.*'
         },
         watch: {
@@ -29,7 +29,7 @@ let config = {
             jsLibs: 'src/js/libs/*.js',
             css: 'src/sass/**/*.scss',
             cssLibs: 'src/css/libs/*.css',
-            img: 'src/img/**/*.*',
+            // img: 'src/img/**/*.*',
             fonts: 'src/fonts/**/*.*'
         },
     },

@@ -12,9 +12,9 @@ gulp.task('watch', function(){
     watch([config.paths.watch.css], () => {
         gulp.start('styles');
     });
-    watch([config.paths.watch.img], () => {
-        gulp.start('images');
-    });
+    // watch([config.paths.watch.img], () => {
+    //     gulp.start('images');
+    // });
     watch([config.paths.watch.fonts], () => {
         gulp.start('fonts');
     });

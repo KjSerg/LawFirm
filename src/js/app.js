@@ -1,5 +1,6 @@
 import { detectBrowser } from './_helpers';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min'
+import 'slick-carousel/slick/slick.min'
 
 class Application {
     constructor() {
@@ -8,6 +9,12 @@ class Application {
 
     static initializePlugins() {
         $('.fancybox').fancybox();
+        $('.reviews-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+        });
         $('.fancybox--text').on('click', function (e) {
             e.preventDefault();
 

@@ -1,0 +1,109 @@
+.reviews {
+  &-section {
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-position: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+  }
+
+  &-slider {
+
+    width: 100%;
+    max-width: 88rem;
+    &__item {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 71.8rem;
+      margin: auto;
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      max-width: 22rem;
+      max-height: 30.9rem;
+      margin-right: 6.5rem;
+    }
+
+    &-container {
+      width: 100%;
+      max-width: 43.3rem;
+      margin-top: auto;
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        background-image: url('../img/§.png');
+        background-repeat: no-repeat;
+        background-position:center;width: 8.2rem;height: 15.8rem;
+        top: 0;
+      }
+    }
+    &__text {
+      margin-bottom: 2.3rem;
+      color: #171a1b;
+      font-family: 'GillSans-Light';
+      font-style: italic;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    &__name {
+      color: #8e7751;
+      font-family: 'GillSans-Light';
+      font-size: 1.8rem;
+
+      strong {
+        display: inline-block;
+        width: 100%;color: #c3a36d;
+      }
+    }
+
+    .slick-prev {
+      left: 0;
+      width: 1.6rem;
+      height: 2.8rem;
+      background-image: url('../img/arr-l.png');
+      background-position:center;
+      background-repeat: no-repeat;
+
+      &:before {
+        display: none;
+      }
+    }
+    .slick-next {
+      right: 0;
+      width: 1.6rem;
+      height: 2.8rem;
+      background-image: url('../img/arr-r.png');
+      background-position:center;
+      background-repeat: no-repeat;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-list {
+    width: 100%;
+    max-width: 17.1rem;
+    margin-left: 12rem;
+
+    &__item {
+      display: inline-block;
+      margin-bottom: 0.7rem;
+    }
+  }
+}
