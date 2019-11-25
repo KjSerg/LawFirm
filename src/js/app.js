@@ -13,7 +13,15 @@ class Application {
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 405,
+                    settings: {
+                        arrows: false,
+                    }
+                },
+            ]
         });
         $('.fancybox--text').on('click', function (e) {
             e.preventDefault();
@@ -56,7 +64,20 @@ class Application {
                 // $text.slideUp(500);
                 $this.text(textOpen);
             }
-        })
+        });
+
+        $('.menu-open-js').on('click', function () {
+            const $ths = $(this);
+            const $elements = $('.hide-in-mobile');
+
+            if($ths.hasClass('active')) {
+                $ths.removeClass('active');
+                $elements.slideUp(500);
+            }else {
+                $ths.addClass('active');
+                $elements.slideDown(500);
+            }
+        });
     };
 
     static detectBrowser() {

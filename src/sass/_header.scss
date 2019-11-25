@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background-color: #ffffff;
   &-top {
     display: flex;
@@ -8,6 +9,9 @@
     padding-bottom: 2rem;
 
     border-bottom: 2px solid rgba(#064e63, 0.28);
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
   }
 
 
@@ -16,7 +20,9 @@
     align-items: center;
     justify-content: center;
 
-
+    @media (max-width: 750px) {
+     margin: 2.5rem auto;
+    }
   }
 
   &__link {
@@ -51,6 +57,7 @@
     display: flex;
     flex-direction: column;
 
+
     &__link {
       display: flex;
       justify-content: flex-end;
@@ -65,6 +72,10 @@
       font-size: 1.8rem;
       text-decoration: none;
       text-align: right;
+      @media (max-width: 750px) {
+        text-align: center;
+        justify-content: center;
+      }
 
       strong {
         font-weight: 400;
@@ -92,6 +103,10 @@
       align-items: center;
       justify-content: space-between;
 
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
+
       a {
         color: #122233;
         font-family: "GillSans";
@@ -99,6 +114,12 @@
         font-weight: 300;
         letter-spacing: 0.027rem;
         text-decoration: none;
+        @media (max-width: 750px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1.5rem;
+        }
       }
     }
 
@@ -111,8 +132,70 @@
   height: 100%;
   max-width: 30.6rem;
   max-height: 10rem;
-
+  @media (max-width: 750px) {
+    max-width: 25rem;
+  }
   &-img {
     max-width: 100%;
+  }
+}
+
+.humburger {
+  display: none;
+  @media (max-width: 750px) {
+    position: absolute;
+
+    right: 1.5rem;
+    top: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 3.4rem;
+    height: 3rem;
+    padding: 0.3rem;
+
+    box-sizing: border-box;
+    transition: 0.5s ease;
+
+    span {
+      //position: absolute;
+      display: inline-block;
+      width: 100%;
+      height: 2px;
+
+      background-color: #cecece;
+
+
+      &:nth-child(2) {
+        margin: auto;
+      }
+
+      box-sizing: border-box;
+      transition: 0.5s ease;
+    }
+
+    &.active {
+      span {
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(1) {
+          transform: rotate(45deg) translateY(1.6rem);
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg) translateY(-1.6rem);
+        }
+      }
+    }
+  }
+}
+
+.hide-in-mobile {
+  @media (max-width: 750px) {
+    display: none;
+
   }
 }

@@ -15,6 +15,9 @@
     font-family: 'GillSans-SemiBold';
     font-size: 4rem;
     font-weight: 400;
+    @media (max-width: 750px) {
+      font-size: 3rem;
+    }
   }
 
   &-list {
@@ -77,6 +80,12 @@
         @media (max-width: 1023px) {
           max-width: 30%;
          padding: 0 1rem;
+        }
+        @media (max-width: 600px) {
+          max-width: 45%;
+        }
+        @media (max-width: 359px) {
+          max-width: 100%;
         }
       }
       .keys-list__link {

@@ -5,6 +5,9 @@
   }
   &__title {
     margin-bottom: 10rem;
+    @media (max-width: 500px) {
+      margin-bottom: 4rem;
+    }
   }
   &-list {
     display: flex;
@@ -20,6 +23,9 @@
       @media (max-width: 1023px) {
         max-width: 50%;
         padding: 2rem;
+      }
+      @media (max-width: 500px) {
+        max-width: 100%;
       }
       &:hover {
         background-color: #faf0de;
@@ -65,10 +71,19 @@
       align-items: center;
       justify-content: center;
 
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
+
       &__item {
         display: flex;
         padding: 3.3rem 6.6rem 3.4rem 7.4rem;
         border-right: 1px dashed #073340;
+
+        @media (max-width: 750px) {
+          border-right: none;
+          padding: 3rem;
+        }
 
         &:last-child {
           border-right:none;

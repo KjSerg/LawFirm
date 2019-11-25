@@ -18,6 +18,10 @@
 
     overflow: hidden;
 
+    @media (max-width: 720px) {
+      padding: 2rem;
+    }
+
      &:after {
        position: absolute;
        display: inline-block;
@@ -64,6 +68,9 @@
       @media (max-width: 1023px) {
         width: 25%;
       }
+      @media (max-width: 720px) {
+        display: none;
+      }
     }
     &__name {
       width: auto;
@@ -82,6 +89,8 @@
       font-weight: 400;
       line-height: 7rem;
       text-transform: uppercase;
+
+      white-space: nowrap;
     }
   }
 
@@ -99,6 +108,10 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 750px) {
+      flex-wrap: wrap;
+    }
     &__text {
       color: #171a1b;
       font-family: 'GillSans-Light';
@@ -132,6 +145,14 @@
       background-color: #f8fcfd;
       text-align: center;
       transition: 0.5s ease;
+
+      @media (max-width: 750px) {
+        max-width: 50%;
+      }
+      @media (max-width: 400px) {
+        max-width: 100%;
+        border-bottom: 2px solid #ffffff;
+      }
 
       &:hover {
         background-color: #f3ddb5;

@@ -32,6 +32,9 @@
       max-width: 22rem;
       max-height: 30.9rem;
       margin-right: 6.5rem;
+      @media (max-width: 650px) {
+        display: none;
+      }
       img {
         @media (max-width: 1199px) {
           width: 100%;
@@ -46,6 +49,10 @@
       width: 100%;
       max-width: 43.3rem;
       margin-top: auto;
+
+      @media (max-width: 650px) {
+       margin: auto;
+      }
 
       &:after {
         position: absolute;

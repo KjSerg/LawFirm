@@ -11,7 +11,12 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-
+    @media (max-width: 750px) {
+      padding: 3rem 4rem;
+    }
+    @media (max-width: 450px) {
+      padding: 4rem 2rem;
+    }
     &__title {
       margin-bottom: 2.8rem;
     }

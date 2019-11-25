@@ -43,6 +43,15 @@
     height: 64.3rem;
     pointer-events: none;
 
+    @media (max-width: 780px) {
+      width: 42.9rem;
+      height: 54.3rem;
+    }
+    @media (max-width: 600px) {
+      display: none;
+
+    }
+
     &__text {
       position: absolute;
       width: 100%;
@@ -53,6 +62,11 @@
       text-align: center;
       @media (max-width: 1280px) {
         right: 8rem;
+      }
+
+      @media (max-width: 780px) {
+        right: 12rem;
+
       }
     }
     &__name {
@@ -103,6 +117,25 @@
   @media (max-width: 1400px) {
     width: 93%;
   }
+  @media (max-width: 780px) {
+    padding-left: 4rem;
+    padding-top: 4rem;
+  }
+  @media (max-width: 600px) {
+    padding: 4rem;
+    max-width: 100%;
+    width: 100%;
+  }
+  @media (max-width: 450px) {
+    padding: 2rem;
+  }
+
+  &__button {
+    @media (max-width: 450px) {
+      padding: 2rem;
+      font-size: 1.6rem;
+    }
+  }
 
   &__title {
     width: 100%;
@@ -115,6 +148,9 @@
     text-align: center;
     @media (max-width: 1199px) {
       font-size: 4rem;
+    }
+    @media (max-width: 780px) {
+      font-size: 2.5rem;
     }
   }
 
@@ -129,6 +165,12 @@
     text-align: center;
     @media (max-width: 1199px) {
       font-size: 2rem;
+    }
+    @media (max-width: 780px) {
+      font-size: 1.8rem;
+      br {
+        display: none;
+      }
     }
   }
 
