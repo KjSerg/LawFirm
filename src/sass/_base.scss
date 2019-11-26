@@ -38,7 +38,14 @@ a {
 
 .text {
   color: #242d2f;
-  font-family: 'GillSans';
+  font-family: 'GillSans-Light';
   font-size: 2rem;
   font-weight: 300;
+
+  &--bankruptcy {
+
+    text-align: center;
+    font-size: 2.4rem;
+
+  }
 }

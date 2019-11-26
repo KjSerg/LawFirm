@@ -9,9 +9,6 @@
 
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
-//@import "../../node_modules/slick-carousel/slick/slick";
-//@import "../../node_modules/slick-carousel/slick/slick-theme";
-
 // BASE
 @import "fonts";
 @import "base";
@@ -30,3 +27,6 @@
 @import "sections/facts";
 @import "sections/price";
 @import "sections/reviews";
+
+@import "bankruptcy-page/clear-debts";
+@import "bankruptcy-page/conditions";
