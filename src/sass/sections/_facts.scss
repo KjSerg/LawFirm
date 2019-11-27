@@ -169,6 +169,12 @@
           width: 100%;
         }
       }
+
+      &.facts-row--two {
+        &:before {
+          right: 88%;
+        }
+      }
     }
   }
 

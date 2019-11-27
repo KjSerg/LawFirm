@@ -1,0 +1,113 @@
+.cost {
+  &-section {
+    padding-top: 7.7rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &-container {
+    display: flex;
+  }
+  &-left {
+    width: 100%;
+    max-width: 56rem;
+  }
+  &__subtitle {
+    margin-bottom: 2.7rem;
+    color: #064e63;
+    font-family: 'GillSans-SemiBold';
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  &__number {
+    margin-bottom: 3rem;
+    color: #ab9062;
+    font-family: 'GillSans-SemiBold';
+    font-size: 7rem;
+    font-weight: 400;
+  }
+
+  &__desc {
+    margin-bottom: 3.9rem;
+    color: #171a1b;
+    font-family: 'GillSans-Light';
+    font-size: 1.8rem;
+    font-weight: 300;
+    strong {
+      font-family: "GillSans";
+    }
+  }
+
+  &-form {
+    padding-left: 0;
+    padding-right: 14rem;
+    &:after {
+      left: auto;
+      right: 100%;
+    }
+    &:before {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      height: 100%;
+      width: 37rem;
+
+      left: 100%;
+      top: 0;
+      bottom: 0;
+
+      background-color: #f9f5f5;
+    }
+    &__title {
+      margin-bottom: 3.4rem;
+      color: #064e63;
+      font-family: 'GillSans-SemiBold';
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+  }
+
+  &-list {
+    color: #ffffff;
+    font-family: 'GillSans-Light';
+    font-size: 2.2rem;
+    font-weight: 300;
+    &__item {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 3rem;
+      &:before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        width: 2.4rem;
+        height: 1.8rem;
+        top: 0;
+        left:0;
+        background-image: url('../img/check.png');
+      }
+    }
+    &-container {
+      position: relative;
+      padding-top: 4.5rem;
+      padding-bottom: 7rem;
+      padding-right: 7rem;
+      padding-left: 7rem;
+      color: #ffffff;
+      background-color: #065065;
+    }
+    &__title {
+      margin-bottom: 3rem;
+      color: #ffffff;
+      font-family: 'GillSans-SemiBold';
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}
