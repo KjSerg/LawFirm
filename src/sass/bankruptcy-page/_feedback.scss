@@ -1,7 +1,203 @@
 .feedback {
   &-section {
     position: relative;
+    &:after {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      height: 100%;
+      width: 50%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('../img/form-bg.jpg');
+
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
   }
 
   display: flex;
+  justify-content: center;
+
+  &__title {
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #064e63;
+    font-family: 'GillSans-SemiBold';
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: 3.8rem;
+    color: #0e1f28;
+    font-family: 'GillSans-SemiBold';
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &-messengers {
+    padding-right: 6.4rem;
+    width: 50%;
+    padding-bottom: 6rem;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38.4rem;
+    height: 6.1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+
+
+    color: #ffffff;
+    font-family: "GillSans";
+    font-size: 2rem;
+    font-weight: 400;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      display: inline-block;
+      margin-right: 1.6rem;
+      width: 3.8rem;
+      height: 3.8rem;
+      object-fit: contain;
+    }
+
+    &--green {
+      background-image: linear-gradient(-8deg, #008100 0%, #3fc02a 99%, #3fc02a 100%);
+    }
+
+    &--blue {
+      background-image: linear-gradient(-8deg, #3d598b 0%, #6789b9 99%, #6789b9 100%);
+    }
+
+    &--purple {
+      background-image: linear-gradient(-8deg, #035eca 0%, #00c6ff 99%, #00c6ff 100%);
+    }
+
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 15px -5px rgba(0,0,0,1);
+    }
+
+  }
+
+  &-form {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding-left: 4.6rem;
+    padding-top: 4.2rem;
+    padding-bottom: 3.6rem;
+    &__title {
+      margin-bottom: 3rem;
+      color: #ffffff;
+      font-family: 'GillSans-SemiBold';
+      font-size: 2.8rem;
+      text-align: center;
+      font-weight: 400;
+    }
+    &__textarea {
+      margin-bottom: 1rem;
+      padding: 2rem 3rem;
+      width: 100%;
+      height: 13rem;
+      background-color: #ffffff;
+
+      color: #b7b7b7;
+      font-family: 'GillSans-Light';
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      resize: none;
+      outline: none;
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+    }
+
+    &__input {
+      width: 100%;
+      padding: 2rem 3rem;
+      margin-bottom: 3rem;
+      background-color: #fff;
+
+      color: #b7b7b7;
+      font-family: 'GillSans-Light';
+      font-size: 1.8rem;
+      font-weight: 300;
+
+      outline: none;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+    }
+
+    &__button {
+      margin-bottom: 2rem;
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

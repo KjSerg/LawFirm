@@ -587,6 +587,9 @@
                 </h3>
 
                 <div class="best-container">
+                    <div class="best-container__text">
+                        или
+                    </div>
                     <div class="best-left best-item">
                         <div class="best-item__title">
                             Быть вечным должником
@@ -957,7 +960,54 @@
     <section class="section feedback-section" id="feedback-section">
         <div class="container">
             <div class="feedback">
+                <div class="feedback-messengers">
+                    <h3 class="section__title feedback__title">
+                        Не нашли ответ на нужный вопрос?
+                    </h3>
+                    <h4 class="feedback__subtitle">
+                        НАПИШИТЕ НАМ <br>
+                        НАПРЯМУЮ В МЕССЕНДЖЕР
+                    </h4>
 
+                    <div class="feedback-buttons">
+                        <a href="#" target="_blank" class="feedback__button feedback__button--green">
+                            <img src="img/m1.png" alt="">
+                            Написать в Whatsapp
+                        </a>
+                        <a href="#" target="_blank" class="feedback__button feedback__button--blue">
+                            <img src="img/m2.png" alt="">
+                            Написать ВКонтакте
+                        </a>
+                        <a href="#" target="_blank" class="feedback__button feedback__button--purple">
+                            <img src="img/m3.png" alt="">
+                            Написать в Messenger
+                        </a>
+                    </div>
+                </div>
+
+                <form action="mail.php" class="feedback-form form">
+                    <input type="hidden" name="project_name" value="project_name">
+                    <input type="hidden" name="admin_email" value="admin_email">
+                    <input type="hidden" name="form_subject" value="form_subject">
+
+                    <div class="feedback-form__title">
+                        ВОСПОЛЬЗУЙТЕСЬ ФОРМОЙ
+                        ОБРАТНОЙ СВЯЗИ
+                    </div>
+                    <textarea name="Сообщение" placeholder="Опишите ситуацию" class="feedback-form__textarea"></textarea>
+                    <input type="tel" name="Телефон" placeholder="Ваш номер телефона" class="feedback-form__input">
+
+                    <button class="button feedback-form__button button--gradient">
+                        ЗАДАТЬ ВОПРОС
+                    </button>
+                    <label class="conditions-form__container best-form__container feedback-form__container">
+                        <input type="checkbox" name="policy" class="conditions-form__checkbox">
+                        <span></span>
+                        <p>
+                            Я соглашаюсь с политикой <br> конфиденципльности
+                        </p>
+                    </label>
+                </form>
             </div>
         </div>
     </section>
