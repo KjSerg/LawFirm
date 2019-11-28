@@ -19,6 +19,7 @@
 @import "footer";
 @import "modals";
 
+//index page
 @import "sections/forecast";
 @import "sections/inform";
 @import "sections/keys";
@@ -28,6 +29,7 @@
 @import "sections/price";
 @import "sections/reviews";
 
+//second page
 @import "bankruptcy-page/clear-debts";
 @import "bankruptcy-page/conditions";
 @import "bankruptcy-page/media";
@@ -37,3 +39,4 @@
 @import "bankruptcy-page/algorithm";
 @import "bankruptcy-page/result";
 @import "bankruptcy-page/questions";
+@import "bankruptcy-page/feedback";
