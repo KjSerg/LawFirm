@@ -1,0 +1,137 @@
+.best {
+  &-section {
+    padding-top: 11.8rem;
+    overflow: hidden;
+  }
+  &__title {
+    margin-bottom: 4.7rem;
+  }
+  &-container {
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+  }
+
+  &-left {
+    padding-right: 7.8rem;
+    color: #064e63;
+    &:before {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      z-index: 1;
+      top: 18rem;
+      left: -15%;
+      width: 33.7rem;
+      height: 22.3rem;
+
+      background-image: url('../img/01.png');
+      background-repeat: no-repeat;
+      background-size:contain;
+      pointer-events: none;
+    }
+    &:after {
+      right: 0;
+      background-color: #fbf5e9;
+    }
+  }
+  &-right {
+    padding-left:7.5rem;
+    color: #ffffff;
+    &:before {
+      position: absolute;
+      display: inline-block;
+      content: '';
+      z-index: 1;
+      top: 18rem;
+      right: -15%;
+      width: 37.6rem;
+      height: 22.3rem;
+
+      background-image: url('../img/02.png');
+      background-repeat: no-repeat;
+      background-size:contain;
+      pointer-events: none;
+    }
+    &:after {
+      left: 0;
+      background-color: #064e63;
+    }
+  }
+
+  &-form {
+    position: relative;
+    z-index: 1;
+
+    padding: 0;
+    padding-left: 3.5rem;
+    padding-right: 4.5rem;
+
+    background-color: transparent;
+
+    &__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #ffffff;
+      padding: 2rem 4rem;
+      border-radius: 2.8rem;
+      background-color: transparent;
+      color: #ffffff;
+    }
+    &__container {
+      color: #e2e2e2;
+    }
+
+    &:before, &:after {
+      display: none;
+    }
+  }
+
+  &-item {
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+
+    &:after {
+      position: absolute;
+      display: inline-block;
+      content: '';
+
+      height: 100%;
+
+      width: 300%;
+
+      top: 0;
+      bottom: 0;
+    }
+
+    &__title {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 4.8rem;
+      //color: #064e63;
+      font-family: 'GillSans-SemiBold';
+      font-size: 3rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      position: relative;
+      z-index: 1;
+
+      font-family: 'GillSans-Light';
+      font-size: 2rem;
+      font-weight: 300;
+      p {
+        margin-bottom: 3rem;
+      }
+      strong {
+        font-family: 'GillSans-SemiBold';
+      }
+    }
+
+
+  }
+}

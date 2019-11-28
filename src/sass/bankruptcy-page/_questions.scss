@@ -1,0 +1,124 @@
+.questions {
+  &-section {
+    position: relative;
+    padding-top: 7.9rem;
+    padding-bottom: 8rem;
+  }
+
+  &__title {
+    margin-bottom: 7rem;
+  }
+
+  &-person {
+    position: absolute;
+
+    width: 80rem;
+    height: 116.9rem;
+
+    bottom:0;
+    right: 0;
+
+    @media (max-width: 1800px) {
+      right: -10rem;
+    }
+    @media (max-width: 1366px) {
+      right: -20rem;
+    }
+    @media (max-width: 1199px) {
+      right: -10rem;
+    }
+    @media (max-width: 1120px) {
+      right: -15rem;
+    }
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-accordeon {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 97.8rem;
+
+    @media (max-width: 1500px) {
+      max-width: 90rem;
+    }
+    @media (max-width: 1023px) {
+      max-width: 100%;
+    }
+
+    &__text {
+      display: none;
+      padding-left: 3.5rem;
+      padding-right: 10rem;
+      padding-bottom: 3rem;
+
+
+      color: #ffffff;
+      font-family: 'GillSans-Light';
+      font-size: 2.4rem;
+      font-weight: 300;
+    }
+    &__title {
+      position: relative;
+      padding-right: 10rem;
+      padding-left: 3.5rem;
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+      background-color: #fbf5e9;
+      color: #171a1b;
+      font-family: "GillSans";
+      font-size: 2.4rem;
+      font-weight: 400;
+
+      transition: 0.5s ease;
+
+      cursor: pointer;
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3.2rem;
+
+        width: 2.8rem;
+        height: 1.6rem;
+        transition: 0.5s ease;
+        background-image: url('../img/arr-bot.png');
+      }
+    }
+
+    &__item {
+      border-bottom:1px solid #bf964b;
+      transition: 0.5s ease;
+
+      &:last-child {
+        border-bottom-color: transparent;
+      }
+      &.active {
+        background: #0e1f28;
+
+        border-bottom-color: transparent;
+
+        .questions-accordeon__title {
+          color: #cfa551;
+          background: #0e1f28;
+
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

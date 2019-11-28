@@ -35,6 +35,8 @@ class Application {
 
             $.fancybox.open($($modal));
         });
+
+
     };
 
     static initializeModules() {
@@ -77,6 +79,37 @@ class Application {
                 $ths.addClass('active');
                 $elements.slideDown(500);
             }
+        });
+
+        $('.questions-accordeon__title').on('click', function (e) {
+            e.preventDefault();
+
+            const $elements = $('.questions-accordeon__item');
+
+            const $ths = $(this);
+
+            const $wrapper = $ths.closest('.questions-accordeon__item');
+
+            const $text = $wrapper.find('.questions-accordeon__text');
+
+            const is_active = $wrapper.hasClass('active');
+
+            $elements.not($wrapper).removeClass('active');
+            $elements.not($wrapper).find('.questions-accordeon__text').slideUp(500);
+
+            if (is_active) {
+
+                $wrapper.removeClass('active');
+
+                $text.slideUp(500);
+
+            }else {
+
+                $wrapper.addClass('active');
+
+                $text.slideDown(500);
+            }
+
         });
     };
 
