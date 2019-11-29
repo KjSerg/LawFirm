@@ -66,6 +66,14 @@
         border-bottom: 1px solid #ffffff;
       }
 
+      &.long-number {
+        @media (max-width: 410px) {
+         .facts-row__number {
+           font-size:1.8rem;
+         }
+        }
+      }
+
       &:after {
         position: absolute;
         display: inline-block;
@@ -119,6 +127,10 @@
       font-family: 'GillSans-SemiBold';
       font-size: 4.8rem;
       font-weight: 400;
+
+      @media (max-width: 770px) {
+        font-size:3rem;
+      }
 
       &--subrow {
         line-height:0.5;

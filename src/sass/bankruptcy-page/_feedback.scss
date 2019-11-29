@@ -16,12 +16,18 @@
       -webkit-background-size: cover;
       background-size: cover;
       background-repeat: no-repeat;
-
+      @media (max-width: 680px) {
+        display: none;
+      }
     }
   }
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+  }
 
   &__title {
     margin-bottom: 5rem;
@@ -31,6 +37,10 @@
     font-size: 5rem;
     font-weight: 400;
     text-transform: uppercase;
+
+    @media (max-width: 1023px) {
+      font-size: 3rem;
+    }
   }
 
   &__subtitle {
@@ -40,12 +50,19 @@
     font-size: 2.8rem;
     text-align: center;
     font-weight: 400;
+    @media (max-width: 1023px) {
+      font-size: 2.2rem;
+    }
   }
 
   &-messengers {
     padding-right: 6.4rem;
     width: 50%;
     padding-bottom: 6rem;
+    @media (max-width: 680px) {
+      width: 100%;
+      padding: 3rem;
+    }
   }
 
   &__button {
@@ -64,6 +81,10 @@
     font-size: 2rem;
     font-weight: 400;
 
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -74,6 +95,9 @@
       width: 3.8rem;
       height: 3.8rem;
       object-fit: contain;
+      @media (max-width: 450px) {
+        display: none;
+      }
     }
 
     &--green {
@@ -103,6 +127,21 @@
     padding-left: 4.6rem;
     padding-top: 4.2rem;
     padding-bottom: 3.6rem;
+
+    @media (max-width: 1023px) {
+      padding-left: 3rem;
+    }
+
+    @media (max-width: 680px) {
+      width: 100%;
+      padding: 3rem;
+      background-image: url('../img/form-bg.jpg');
+
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
     &__title {
       margin-bottom: 3rem;
       color: #ffffff;

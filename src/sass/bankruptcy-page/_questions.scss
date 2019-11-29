@@ -65,6 +65,9 @@
       font-family: 'GillSans-Light';
       font-size: 2.4rem;
       font-weight: 300;
+      @media (max-width: 410px) {
+        font-size: 1.6rem;
+      }
     }
     &__title {
       position: relative;
@@ -81,7 +84,9 @@
       transition: 0.5s ease;
 
       cursor: pointer;
-
+      @media (max-width: 410px) {
+        font-size: 1.8rem;
+      }
       &:after {
         position: absolute;
         display: inline-block;
@@ -95,6 +100,8 @@
         height: 1.6rem;
         transition: 0.5s ease;
         background-image: url('../img/arr-bot.png');
+        background-repeat: no-repeat;
+        background-size:contain;
       }
     }
 

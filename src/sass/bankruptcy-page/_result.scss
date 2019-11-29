@@ -12,6 +12,9 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 5rem;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
     &__item {
       display: flex;
       align-items: center;
@@ -22,6 +25,11 @@
       max-width: 25rem;
 
       text-align: center;
+
+      @media (max-width: 600px) {
+        max-width: 100%;
+        margin-bottom: 2rem;
+      }
     }
     &__text {
       color: #171a1b;

@@ -280,6 +280,11 @@
         height: 65.9rem;
         transform: translateX(45%);
 
+        @media (max-width: 830px) {
+          width: 40rem;
+          height: 57.9rem;
+        }
+
         &__text {
 
           bottom: 3.2rem;

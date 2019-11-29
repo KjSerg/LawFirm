@@ -6,14 +6,31 @@
 
   &__title {
     margin-bottom: 2.7rem;
+    @media (max-width: 1023px) {
+      br {
+        display: none;
+      }
+    }
   }
 
   &-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 730px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
   &-list {
+    @media (max-width: 1023px) {
+      margin-right: 2rem;
+    }
+    @media (max-width: 730px) {
+      margin: 0;
+      margin-bottom: 2rem;
+    }
     &__item {
       display: flex;
       align-items: center;
@@ -21,6 +38,7 @@
       width: 100%;
       max-width: 49rem;
       margin-bottom: 6.6rem;
+
     }
     &__text {
       color: #242d2f;
@@ -56,6 +74,17 @@
     padding-bottom: 3.6rem;
     background-color: #f9f5f5;
 
+    @media (max-width: 1023px) {
+      padding-left: 1rem;
+      padding-right:1rem;
+    }
+    @media (max-width: 730px) {
+      width: 80%;
+      margin: auto;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+    }
     &:after{
       position: absolute;
       display: inline-block;
@@ -68,6 +97,9 @@
       bottom: 0;
 
       background-color: #f9f5f5;
+      @media (max-width: 730px) {
+        display: none;
+      }
     }
     &__label {
       position: relative;
@@ -114,10 +146,16 @@
       font-family: 'GillSans-Light';
       font-size: 1.8rem;
       font-weight: 300;
+      p{
+        @media (max-width: 410px) {
+          width: 20rem;
+        }
+      }
     }
 
     &__checkbox {
       display: none;
+
       & + span {
         position: relative;
         display: inline-block;
