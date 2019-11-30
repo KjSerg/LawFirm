@@ -52,3 +52,10 @@ a {
 
   }
 }
+
+input {
+  border: 1px solid transparent;
+  &.error {
+    border-color: red;
+  }
+}
