@@ -140,6 +140,21 @@ class Application {
                 test = true,
                 thsInputs = ths.find('input');
 
+            const $consent = ths.find('input[name="policy"][type="checkbox"]');
+
+            const has_consent = $consent.length > 0;
+
+            if(has_consent) {
+
+                if(!$consent.prop('checked')) {
+
+                    $consent.addClass('error');
+
+                    return false;
+
+                }
+
+            }
 
             thsInputs.each(function () {
                 let thsInput = $(this),
@@ -147,6 +162,8 @@ class Application {
                     thsInputVal =  thsInput.val(),
                     inputReg = new RegExp(thsInput.data('reg')),
                     inputTest = inputReg.test(thsInputVal);
+
+
 
                 if (thsInput.attr('required')) {
                     if (thsInputVal.length <= 0) {

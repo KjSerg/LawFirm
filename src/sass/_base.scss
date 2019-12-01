@@ -58,4 +58,8 @@ input {
   &.error {
     border-color: red;
   }
+
+  &[type="checkbox"][ name="policy"].error + span {
+    border-color: red;
+  }
 }
