@@ -1,0 +1,138 @@
+.about-company {
+  &-section {
+    padding-top: 7.9rem;
+    padding-bottom: 9.4rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 2.8rem;
+      color: #064e63;
+      font-family: 'GillSans-SemiBold';
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    a {
+      text-decoration: underline;
+      color: #bb9858;
+    }
+
+    strong {
+      font-family: 'GillSans-SemiBold';
+    }
+
+    blockquote {
+      position: relative;
+      
+      margin-bottom: 8rem;
+      margin-top: 8rem;
+      padding: 7.2rem 24rem;
+      background-color: #dfb568;
+      p, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
+      }
+
+
+      color: #171a1b;
+      font-family: 'GillSans-Light';
+      font-size: 2.6rem;
+      font-weight: 300;
+
+      @media (max-width: 470px) {
+        padding: 2rem;
+      }
+      
+      &:before, &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        height: 100%;
+        width: 300%;
+        background-color: #dfb568;
+
+        top: 0;
+      }
+
+      &:before {
+        left: 1%;
+        transform: translateX(-100%);
+      }
+      &:after {
+        left: 99%;
+      }
+
+      span {
+        position: absolute;
+        display: inline-block;
+
+        width: 80rem;
+        height: 100%;
+
+        top: 0;
+        left: 18rem;
+
+        pointer-events: none;
+
+        @media (max-width: 1023px) {
+          left: 3rem;
+        }
+
+        &:before, &:after {
+          position: absolute;
+          display: inline-block;
+          content: '';
+
+          width: 5.2rem;
+          height: 3.2rem;
+
+          background-size:contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        &:before {
+          left: 0;
+          top: 4rem;
+          background-image: url('../img/b1.png');
+          @media (max-width: 470px) {
+            display: none;
+          }
+        }
+        &:after {
+          bottom: 4rem;
+          right: 0;
+          background-image: url('../img/b2.png');
+          @media (max-width: 1023px) {
+            bottom: 2rem;
+          }
+          @media (max-width: 730px) {
+            display: none;
+          }
+        }
+
+      }
+
+      @media (max-width: 1023px) {
+        padding: 7.2rem 10rem;
+      }
+      
+    }
+
+    p {
+      margin-bottom: 4.2rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}

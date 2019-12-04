@@ -206,6 +206,8 @@ class Application {
             }
 
         });
+
+        $('.text blockquote').append('<span></span>');
     };
 
     static detectBrowser() {
