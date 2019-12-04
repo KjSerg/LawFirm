@@ -59,4 +59,15 @@
       font-weight: 300;
     }
   }
+
+  &--family-page {
+    .algorithm-list__item {
+      @media (max-width: 1023px) {
+        max-width: 24rem;
+      }
+      @media (max-width: 450px) {
+        max-width: 100%;
+      }
+    }
+  }
 }

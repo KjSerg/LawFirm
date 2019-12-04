@@ -77,5 +77,125 @@
       font-weight: 300;
     }
   }
+
+  &-consult {
+    width: 100%;
+    max-width: 92rem;
+
+    padding: 7.7rem 11.5rem 8.8rem 11.5rem;
+
+    @media (max-width: 600px) {
+      padding: 7rem 3rem;
+    }
+
+    box-shadow: 0 0.3rem 1.2rem rgba(7, 71, 91, 0.05);
+
+    &__title {
+      margin-bottom: 5rem;
+      color: #064e63;
+      font-family: 'GillSans-SemiBold';
+      font-size: 5rem;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &__text {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    &__link {
+      width: 100%;
+      max-width: 26.4rem;
+      margin-bottom: 7rem;
+    }
+
+    &__input {
+      color: #b7b7b7;
+      font-family: 'GillSans-Light';
+      font-size: 1.8rem;
+      font-weight: 300;
+
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+    }
+
+    &__textarea {
+      width: 100%;
+      height: 13rem;
+      padding: 2.2rem;
+      margin-bottom: 1.5rem;
+      border-radius: 2.7rem;
+      border: 1px solid #868686;
+      background-color: #ffffff;
+
+      outline: none;
+      resize: none;
+
+      color: #b7b7b7;
+      font-family: 'GillSans-Light';
+      font-size: 1.8rem;
+      font-weight: 300;
+
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #b7b7b7;
+        font-family: 'GillSans-Light';
+        font-size: 1.8rem;
+        font-weight: 300;
+      }
+    }
+
+    &__label {
+      margin-bottom: 1.5rem;
+    }
+    &__button {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
   display: none;
 }

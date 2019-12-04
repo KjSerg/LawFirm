@@ -1,0 +1,118 @@
+.cases {
+  &-section {
+    padding-top: 8.8rem;
+    padding-bottom: 10rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 6.5rem;
+    text-align: center;
+    color: #242d2f;
+    font-family: 'GillSans-Light';
+    font-size: 2rem;
+    font-weight: 300;
+  }
+
+  &-slider {
+    &-item {
+      display: flex;
+      justify-content: center;
+      @media (max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+
+    &-left {
+      width: 100%;
+      max-width: 23.7rem;
+      margin-right: 8.6rem;
+      @media (max-width: 600px) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+
+      }
+
+
+      &__title {
+        color: #064e63;
+        font-family: 'GillSans-SemiBold';
+        font-size: 2.4rem;
+        font-weight: 400;
+
+      }
+    }
+
+    &-right {
+      width: 100%;
+      max-width: 83.4rem;
+    }
+
+    &-text {
+      margin-bottom: 6rem;
+
+      color: #242d2f;
+      font-family: 'GillSans-Light';
+      font-size: 2.4rem;
+      font-weight: 300;
+
+      h6, h5, h4, h3, h2, h1 {
+        margin-bottom: 2.8rem;
+        color: #064e63;
+        font-family: 'GillSans-SemiBold';
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+
+      &--result {
+        padding-top: 3.4rem;
+        padding-bottom: 4rem;
+
+        border-bottom: 1px solid #bf964b;
+        border-top: 1px solid #bf964b;
+
+        color: #242d2f;
+
+        h6, h5, h4, h3, h2, h1 {
+          color: #bf964b;
+        }
+      }
+    }
+
+
+    &-container {
+      position: relative;
+    }
+
+    &__buttons {
+      position: absolute;
+
+      z-index: 2;
+
+      left: 0;
+
+      top: 12rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 600px) {
+        top: 0;
+        left: auto;
+        right: 0;
+        transform: translateY(-100%);
+      }
+    }
+
+    &__button {
+      &:first-child {
+        margin-right: 18.8rem;
+        @media (max-width: 450px) {
+          margin-right: 5rem;
+        }
+      }
+    }
+
+  }
+
+}

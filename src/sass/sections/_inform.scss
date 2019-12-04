@@ -9,6 +9,13 @@
     margin-bottom: 4rem;
     overflow: visible;
     transition: 0.3s ease;
+
+    p {
+      margin-bottom: 3rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   &__button {
     width: 100%;

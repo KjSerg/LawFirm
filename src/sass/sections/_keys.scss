@@ -96,5 +96,17 @@
 
       }
     }
+
+    &--third {
+      .keys-list__item {
+        width: 29%;
+        text-align: center;
+
+        @media (max-width: 530px) {
+          width: 100%;
+        }
+
+      }
+    }
   }
 }

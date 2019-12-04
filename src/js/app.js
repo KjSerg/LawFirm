@@ -36,6 +36,22 @@ class Application {
             $.fancybox.open($($modal));
         });
 
+        $('.cases-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: $('.cases-slider__button--left'),
+            nextArrow: $('.cases-slider__button--right'),
+            responsive: [
+                {
+                    // breakpoint: 405,
+                    // settings: {
+                    //     arrows: false,
+                    // }
+                },
+            ]
+        });
 
     };
 

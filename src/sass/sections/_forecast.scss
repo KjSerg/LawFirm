@@ -29,6 +29,21 @@
       background-color: #081820;
       opacity: 0.76;
     }
+
+
+    &--family-page {
+      .forecast {
+        @media (max-width: 1023px) {
+          padding-left: 5rem;
+        }
+        @media (max-width: 600px) {
+          padding: 4rem;
+        }
+        @media (max-width: 400px) {
+          padding: 2rem;
+        }
+      }
+    }
   }
 
   &-person {
@@ -181,6 +196,8 @@
     max-width: 69.9rem;
 
     box-sizing: border-box;
+
+
   }
   &__textarea {
     width: 100%;
@@ -260,19 +277,20 @@
     }
   }
 
+  .form__description {
+    margin-bottom: 2.8rem;
+    color: #064e63;
+    font-family: 'GillSans-SemiBold';
+    font-size: 2.4rem;
+    font-weight: 400;
+    strong {
+      color: #ffffff;
+    }
+
+  }
 
   &--bankruptcy {
-    .form__description {
-      margin-bottom: 2.8rem;
-      color: #064e63;
-      font-family: 'GillSans-SemiBold';
-      font-size: 2.4rem;
-      font-weight: 400;
-      strong {
-        color: #ffffff;
-      }
 
-    }
 
     .forecast {
       &-person {
@@ -293,4 +311,6 @@
       }
     }
   }
+
+
 }
