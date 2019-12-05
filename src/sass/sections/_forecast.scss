@@ -174,10 +174,16 @@
     max-width: 69.9rem;
     margin-bottom: 2rem;
     color: #ffffff;
-    font-family: 'GillSans-SemiBold';
+
     font-size: 2.4rem;
     font-weight: 400;
     text-align: center;
+    font-family: 'GillSans-Light';
+    strong {
+      font-size: 3.2rem;
+      font-family: 'GillSans-SemiBold';
+    }
+
     @media (max-width: 1199px) {
       font-size: 2rem;
     }

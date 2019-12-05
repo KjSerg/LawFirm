@@ -224,6 +224,14 @@ class Application {
         });
 
         $('.text blockquote').append('<span></span>');
+
+        $('.facts-additionally__text a.more').on('click', function (e) {
+            e.preventDefault();
+            const $this = $(this);
+            $this.hide();
+
+            $this.closest('.facts-additionally__text').find('.hidden-text').slideDown(500);
+        });
     };
 
     static detectBrowser() {
