@@ -23,21 +23,7 @@
   justify-content: center;
   flex-direction: column;
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 3rem;
-    @media (max-width: 1023px) {
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    @media (max-width: 450px) {
-      flex-direction: column;
-    }
 
-  }
 
   &__label {
     max-width: 32%;
@@ -67,5 +53,21 @@
     @media (max-width: 450px) {
       margin-top: 0;
     }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    @media (max-width: 1023px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+
   }
 }

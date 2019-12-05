@@ -47,11 +47,20 @@
     width: 100%;
     max-width: 97.8rem;
 
+
+
     @media (max-width: 1500px) {
       max-width: 90rem;
     }
     @media (max-width: 1023px) {
       max-width: 100%;
+    }
+
+    &--faq-page {
+      max-width: 100%;
+      @media (max-width: 1500px) {
+        max-width: 100%;
+      }
     }
 
     &__text {
@@ -127,5 +136,14 @@
         }
       }
     }
+  }
+
+  &__text {
+    margin-bottom: 7.2rem;
+    color: #242d2f;
+    font-family: 'GillSans-Light';
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
   }
 }
