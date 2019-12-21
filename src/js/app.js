@@ -2,6 +2,7 @@ import { detectBrowser } from './_helpers';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min'
 import 'slick-carousel/slick/slick.min'
 import 'jquery.maskedinput/src/jquery.maskedinput';
+import './_initMap';
 
 class Application {
     constructor() {
@@ -63,7 +64,9 @@ class Application {
 
         $('a[href="#"]').on('click', e => e.preventDefault());
 
-        $('input[type="tel"]').on('keypress', e => {if (e.keyCode < 48 || e.keyCode > 57) return false;} );
+        $('input[type="tel"]').on('keypress', e => {
+            if (e.keyCode < 48 || e.keyCode > 57) return false;
+        });
 
         $('.forecast-form').on('submit', function (e) {
             e.preventDefault();
@@ -80,11 +83,11 @@ class Application {
             const textClose = $this.attr('data-close');
 
 
-            if($wrap.hasClass('inform-section--hidden-text')) {
+            if ($wrap.hasClass('inform-section--hidden-text')) {
                 $wrap.removeClass('inform-section--hidden-text');
                 // $text.slideDown(500);
                 $this.text(textClose);
-            }else {
+            } else {
                 $wrap.addClass('inform-section--hidden-text');
                 // $text.slideUp(500);
                 $this.text(textOpen);
@@ -95,10 +98,10 @@ class Application {
             const $ths = $(this);
             const $elements = $('.hide-in-mobile');
 
-            if($ths.hasClass('active')) {
+            if ($ths.hasClass('active')) {
                 $ths.removeClass('active');
                 $elements.slideUp(500);
-            }else {
+            } else {
                 $ths.addClass('active');
                 $elements.slideDown(500);
             }
@@ -126,7 +129,7 @@ class Application {
 
                 $text.slideUp(500);
 
-            }else {
+            } else {
 
                 $wrapper.addClass('active');
 
@@ -144,14 +147,14 @@ class Application {
 
             const $element = $(href);
 
-            if($element.length > 0) {
+            if ($element.length > 0) {
 
                 $('html, body').animate(
                     {scrollTop: $element.offset().top},
                     1000
                 );
 
-            }else {
+            } else {
                 window.location.href = home_url + '/' + href;
             }
 
@@ -167,9 +170,9 @@ class Application {
 
             const has_consent = $consent.length > 0;
 
-            if(has_consent) {
+            if (has_consent) {
 
-                if(!$consent.prop('checked')) {
+                if (!$consent.prop('checked')) {
 
                     $consent.addClass('error');
 
@@ -182,10 +185,9 @@ class Application {
             thsInputs.each(function () {
                 let thsInput = $(this),
                     thsInputType = thsInput.attr('type'),
-                    thsInputVal =  thsInput.val(),
+                    thsInputVal = thsInput.val(),
                     inputReg = new RegExp(thsInput.data('reg')),
                     inputTest = inputReg.test(thsInputVal);
-
 
 
                 if (thsInput.attr('required')) {
@@ -196,7 +198,7 @@ class Application {
                     } else {
                         thsInput.removeClass('error');
                         if (thsInput.data('reg')) {
-                            if ( inputTest == false ) {
+                            if (inputTest == false) {
                                 test = false;
                                 thsInput.addClass('error');
                                 thsInput.focus();
@@ -208,21 +210,21 @@ class Application {
                     }
                 }
             });
-            if ( test ) {
+            if (test) {
                 let form_data = ths.serialize();
                 $.ajax({
                     url: ths.attr('action'),
                     type: 'POST',
                     data: form_data,
-                    success: function(r) {
+                    success: function (r) {
                         $.fancybox.close();
                         $.fancybox.open($('#modal_thanks'));
                         ths.trigger('reset');
-                        setTimeout(()=>{
+                        setTimeout(() => {
                             $.fancybox.close();
                         }, 3000);
                     },
-                    error:  function(xhr, str){
+                    error: function (xhr, str) {
                         console.log('Возникла ошибка: ' + xhr.responseCode);
                     }
                 });
@@ -240,10 +242,10 @@ class Application {
             $this.closest('.facts-additionally__text').find('.hidden-text').slideDown(500);
         });
 
-        (()=>{
+        (() => {
             const $textarea = $('.forecast__textarea');
 
-            if($textarea.length > 0) {
+            if ($textarea.length > 0) {
                 $textarea.each(function () {
                     const $t = $(this);
                     const p = $t.attr('placeholder');
@@ -255,19 +257,19 @@ class Application {
                         let pause = 0;
 
                         $t.attr('placeholder', '');
-                        const interval = setInterval(()=>{
+                        const interval = setInterval(() => {
                             let newP = $t.attr('placeholder') + arr[i];
                             $t.attr('placeholder', newP);
-                            if(i >= arrL) {
-                                if(pause < 20) {
+                            if (i >= arrL) {
+                                if (pause < 20) {
                                     $t.attr('placeholder', p);
                                     pause++;
-                                }else {
+                                } else {
                                     $t.attr('placeholder', '');
                                     i = 0;
                                     pause = 0;
                                 }
-                            }else {
+                            } else {
                                 i++;
                             }
                         }, 50);
@@ -277,15 +279,15 @@ class Application {
             }
         })();
 
-        (()=>{
+        (() => {
 
             const $a = $('.questions-accordeon--faq-page');
 
-            if($a.length>0) {
+            if ($a.length > 0) {
                 const hash = window.location.hash;
                 const $elem = $(hash);
 
-                if($elem.length>0) {
+                if ($elem.length > 0) {
                     $elem.addClass('active');
                     $elem.find('.questions-accordeon__text').slideDown(500);
                 }
@@ -301,7 +303,10 @@ class Application {
             $(this).hide();
 
         });
-    };
+
+
+
+    }
 
     static detectBrowser() {
         document.body.setAttribute('data-browser', detectBrowser());
