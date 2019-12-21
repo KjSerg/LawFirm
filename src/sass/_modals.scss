@@ -1,5 +1,22 @@
 .modal {
 
+  &-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      padding: 0.5rem;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
   &-get-forecast {
     //display: flex;
     //flex-direction: column;

@@ -118,6 +118,7 @@
       font-family: 'GillSans-Light';
       font-size: 1.8rem;
       font-weight: 300;
+
     }
     &__number {
       position: relative;
@@ -205,6 +206,9 @@
       font-family: 'GillSans-Light';
       font-size: 2rem;
       font-weight: 300;
+      strong {
+        font-family: 'GillSans-SemiBold';
+      }
       @media (max-width: 1023px) {
         br {
           display: none;

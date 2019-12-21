@@ -14,6 +14,73 @@
   }
 
   &-slider {
+
+    &__review {
+      position: relative;
+      display: inline-block;
+      width: 40.6rem;
+      height: 56.5rem;
+
+      outline: none;
+
+      @media (max-width: 600px) {
+        width: 100%;
+        height: auto;
+
+      }
+
+      &:before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        width: 6.4rem;
+        height: 6.3rem;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+
+        background-image: url('../img/zoom.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        transition: 0.5s ease;
+      }
+
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+
+        background-color: #064e63;
+        opacity: 0;
+
+        transition: 0.5s ease;
+      }
+      &:hover {
+        &:after {
+          opacity: 0.5;
+        }
+        &:before {
+          transform: translate(-50%, -50%) scale(1);
+          z-index: 1;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
     &-item {
       display: flex;
       justify-content: center;
@@ -36,9 +103,28 @@
       &__title {
         color: #064e63;
         font-family: 'GillSans-SemiBold';
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-weight: 400;
 
+      }
+
+      &__link {
+
+        display: inline-block;
+        margin-top: 2.9rem;
+        color: #cfa551;
+        font-family: 'GillSans-Light';
+        font-size: 2rem;
+        font-weight: 300;
+        text-decoration: underline;
+
+        img {
+          display: inline-block;
+          margin-left: 1.5rem;
+          width: 1.9rem;
+          height: 1.9rem;
+
+        }
       }
     }
 
@@ -91,7 +177,7 @@
 
       left: 0;
 
-      top: 12rem;
+      top: 15rem;
 
       display: flex;
       align-items: center;

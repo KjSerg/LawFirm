@@ -45,9 +45,30 @@
     li {
       margin-bottom: 2rem;
       a {
+        position: relative;
+        display: inline-block;
+
         color: #efefef;
         font-family: 'GillSans-Light';
         font-size: 1.8rem;
+
+        &:after {
+          position: absolute;
+          display: inline-block;
+          content: '';
+          left: 0;
+          bottom: -5px;
+          width: 0%;
+          height: 2px;
+          background-color: #fff;
+          transition: .5s ease;
+        }
+
+        &:hover {
+          &:after {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -83,7 +104,7 @@
       margin: 2rem;
     }
     img {
-      width: 1005px;
+      width: 100%;
       height: 100%;
       object-fit: contain;
     }
@@ -185,5 +206,21 @@
         max-width: 100%;
       }
     }
+  }
+}
+
+.footer-number {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #1b325c;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.footer-bottom-left {
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
   }
 }

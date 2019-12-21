@@ -34,6 +34,14 @@ a {
   font-size: 5rem;
   font-weight: 400;
 
+  &--left-text {
+    text-align: left;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
   @media (max-width: 750px) {
     font-size: 3rem;
   }
@@ -44,6 +52,10 @@ a {
   font-family: 'GillSans-Light';
   font-size: 2.4rem;
   font-weight: 300;
+
+  strong {
+    font-family: 'GillSans-SemiBold';
+  }
 
   &--bankruptcy {
 
@@ -62,4 +74,38 @@ input {
   &[type="checkbox"][ name="policy"].error + span {
     border-color: red;
   }
+}
+
+p a[href$=pdf] {
+  text-decoration: underline;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.hidden-text-js {
+  overflow: hidden;
+  height: 3.4rem;
+
+  &.active {
+    height: auto;
+  }
+}
+
+.show-text-js {
+  display: inline-block;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+
+  color: #171a1b;
+  font-size: 1.6rem;
+  font-family: GillSans-Light;
+  font-weight: 300;
+
+}
+
+.slick-slide {
+  outline: none;
 }

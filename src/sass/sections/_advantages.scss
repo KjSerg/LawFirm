@@ -148,3 +148,25 @@
   }
 
 }
+
+
+.advantages-list__item--column {
+  .advantages-list__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+  }
+
+  .advantages-list__icon {
+    align-items: center;
+    justify-content: center;
+    //width: 5rem;
+    //height: 5rem;
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+  }
+}

@@ -42,6 +42,11 @@
     font-family: 'GillSans-SemiBold';
     font-size: 7rem;
     font-weight: 400;
+
+    sup {
+      font-size: 3rem;
+      vertical-align: top;
+    }
   }
 
   &__desc {

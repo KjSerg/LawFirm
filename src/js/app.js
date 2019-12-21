@@ -1,6 +1,7 @@
 import { detectBrowser } from './_helpers';
 import '@fancyapps/fancybox/dist/jquery.fancybox.min'
 import 'slick-carousel/slick/slick.min'
+import 'jquery.maskedinput/src/jquery.maskedinput';
 
 class Application {
     constructor() {
@@ -41,6 +42,7 @@ class Application {
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
+            adaptiveHeight: true,
             prevArrow: $('.cases-slider__button--left'),
             nextArrow: $('.cases-slider__button--right'),
             responsive: [
@@ -53,9 +55,14 @@ class Application {
             ]
         });
 
+        $('input[type="tel"]').mask("+7(999) 999-9999");
+
     };
 
     static initializeModules() {
+
+        $('a[href="#"]').on('click', e => e.preventDefault());
+
         $('input[type="tel"]').on('keypress', e => {if (e.keyCode < 48 || e.keyCode > 57) return false;} );
 
         $('.forecast-form').on('submit', function (e) {
@@ -133,11 +140,9 @@ class Application {
 
             const $this = $(this);
 
-            const href = $this.attr('href').replace('#', '');
+            const href = $this.attr('href');
 
             const $element = $(href);
-
-            console.log(1);
 
             if($element.length > 0) {
 
@@ -146,6 +151,8 @@ class Application {
                     1000
                 );
 
+            }else {
+                window.location.href = home_url + '/' + href;
             }
 
         });
@@ -231,6 +238,68 @@ class Application {
             $this.hide();
 
             $this.closest('.facts-additionally__text').find('.hidden-text').slideDown(500);
+        });
+
+        (()=>{
+            const $textarea = $('.forecast__textarea');
+
+            if($textarea.length > 0) {
+                $textarea.each(function () {
+                    const $t = $(this);
+                    const p = $t.attr('placeholder');
+                    if (p.length > 0) {
+                        const arr = p.split("");
+                        const arrL = arr.length;
+                        let i = 0;
+
+                        let pause = 0;
+
+                        $t.attr('placeholder', '');
+                        const interval = setInterval(()=>{
+                            let newP = $t.attr('placeholder') + arr[i];
+                            $t.attr('placeholder', newP);
+                            if(i >= arrL) {
+                                if(pause < 20) {
+                                    $t.attr('placeholder', p);
+                                    pause++;
+                                }else {
+                                    $t.attr('placeholder', '');
+                                    i = 0;
+                                    pause = 0;
+                                }
+                            }else {
+                                i++;
+                            }
+                        }, 50);
+
+                    }
+                });
+            }
+        })();
+
+        (()=>{
+
+            const $a = $('.questions-accordeon--faq-page');
+
+            if($a.length>0) {
+                const hash = window.location.hash;
+                const $elem = $(hash);
+
+                if($elem.length>0) {
+                    $elem.addClass('active');
+                    $elem.find('.questions-accordeon__text').slideDown(500);
+                }
+            }
+
+        })();
+
+        $('.show-text-js').on('click', function (e) {
+            e.preventDefault();
+
+            $(this).closest('.show-text').find('.hidden-text-js').toggleClass('active');
+
+            $(this).hide();
+
         });
     };
 
