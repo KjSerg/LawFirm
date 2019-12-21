@@ -304,7 +304,24 @@ class Application {
 
         });
 
+        $('.get-help-tabs__item').on('click', function (e) {
+            e.preventDefault();
 
+            const $t = $(this);
+
+            const id = $t.attr('data-id');
+
+            const $wrappper = $t.closest('.get-help-tabs');
+
+            $('.get-help-tabs__item').removeClass('active');
+
+            $t.addClass('active');
+
+            $wrappper.find('.get-help-tabs__content').removeClass('active');
+
+            $wrappper.find(`.get-help-tabs__content[data-id="${id}"]`).addClass('active');
+
+        });
 
     }
 
