@@ -54,9 +54,17 @@
                 <ul>
                     <li>
                         <a href="#">О компании</a>
+                        <ul class="header-navigation__submenu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Наша квалификация</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Услуги</a>
+                        <ul class="header-navigation__submenu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Наша квалификация</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#">Стоимость</a>
@@ -84,120 +92,150 @@
 
 <main class="content">
 
-    <section class="section contacts-section" id="contacts">
+    <section class="forecast-section" id="forecast" style="background-image:url(img/forecast-bg.jpg);">
+        <div class="forecast-logo">
+            <img src="img/logo-sec.png" alt="">
+        </div>
         <div class="container">
-            <div class="contacts">
-                <h1 class="section__title contacts__title">
-                    КОНТАКТЫ
+            <div class="forecast" style="background-image: url(img/help_in_court-bg.jpg);">
+
+                <div class="forecast-person">
+                    <img src="img/person_1.png" class="forecast-person__img" alt="">
+                    <div class="forecast-person__text">
+                        <h2 class="forecast-person__name">
+                            ГОНАГО ДМИТРИЙ
+                        </h2>
+                        <h4 class="forecast-person__position">
+                            Управляющий партнёр
+                        </h4>
+                    </div>
+                </div>
+
+                <h1 class="forecast__title">
+                    ПОМОЩЬ В СУДЕ
+                    <br>
+                    в любой инстанции
                 </h1>
 
-                <div class="contacts-wrapper">
-                    <div class="contacts-info">
+                <h3 class="forecast__description">
+                    Нужно эффективное судебное представительство? <br>
+                    Оцените профессиональную компетентность, опишите<br>
+                    ситуацию и получите бесплатный прогноз по вашему делу!
+                </h3>
+
+                <form  class="forecast-form">
+                    <textarea name="text" placeholder="Для бесплатной консультации опишите вашу ситуацию" class="forecast__textarea"></textarea>
+                    <div class="form__description form__description--center">
                         <p>
-                            644070, г. Омск, ул. Куйбышева,
-                            д. 43, оф. 210, 2 этаж
-                        </p>
-                        <a href="mailto:sibuk@sib-uk.ru" class="contacts-info__mail">
-                            sibuk@sib-uk.ru
-                        </a>
-                        <a href="tel:(3812) 39-40-40" class="contacts-info__tel">
-                            (3812) 39-40-40
-                        </a>
-                        <p>
-                            пн-пт: 09:00 - 19:00 <br>
-                            сб: 10:00 - 15:00<br>
-                            (по предварительной записи)<br>
-                            вс: выходной
+                            97% <strong> гражданских споров </strong> решаем в пользу клиентов!
                         </p>
                     </div>
+                    <a href="#get-forecast" class="fancybox--text forecast__button button--gradient">
+                        ПОЛУЧИТЬ ПРОГНОЗ ПО ДЕЛУ
+                    </a>
 
-                    <div class="contacts-table">
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Район
-                            </div>
-                            <div class="contacts-table__column">
-                                Куйбышевский
-                            </div>
-                        </div>
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Ориентир
-                            </div>
-                            <div class="contacts-table__column">
-                                Пересечение улиц <br>
-                                Куйбышева и Лермонтова (трамвайные пути) <br>
-                                БЦ «На Куйбышева» <br>
-                                (7- этажное коричнево-бежевое офисное здание, на первом этаже с большими <br>
-                                вывесками кафе «Лапша и бистро-пекарня «Шанежки»)
-                            </div>
-                        </div>
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Остановка
-                            </div>
-                            <div class="contacts-table__column">
-                                «Городской музей» <br>
-                                (по ул. 10 лет Октября)
-                            </div>
-                            <div class="contacts-table__column">
-                                «Куйбышева» <br>
-                                (по ул. Лермонтова)
-                            </div>
-                        </div>
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Маршрутные <br>
-                                такси
-                            </div>
-                            <div class="contacts-table__column">
-                                № Я322, 19, 212, 214, 222, 275(М), 322,  386, 387, 399, 410, 430, 470, 514, 910
-                            </div>
-                            <div class="contacts-table__column">
+                </form>
 
-                            </div>
-                        </div>
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Автобус
-                            </div>
-                            <div class="contacts-table__column">
-                                № 22, 23, 59, 72, 138
-                            </div>
-                            <div class="contacts-table__column">
 
-                            </div>
-                        </div>
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Троллейбус
-                            </div>
-                            <div class="contacts-table__column">
-                                № 2, 12, 16
-                            </div>
-                            <div class="contacts-table__column">
-
-                            </div>
-                        </div>
-                        <div class="contacts-table__row">
-                            <div class="contacts-table__column">
-                                Трамвай
-                            </div>
-                            <div class="contacts-table__column">
-
-                            </div>
-                            <div class="contacts-table__column">
-                                № 4, 8, 9
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
 
-    <div class="map" id="map" data-latitude="54.9831746" data-longitude="73.3977373" ></div>
+    <section class="section citizens-section inform-section inform-section--hidden-text" id="citizens">
+        <div class="container">
+            <div class="citizens">
+                <h3 class="section__title">
+                    ПОМОЩЬ В СУДЕ
+                </h3>
+                <div class="text inform-section__text" >
+                    <p>
+
+                        Как выиграть судебный спор либо осуществить эффективную защиту в суде?
+                    </p>
+                    <p>
+                        Даже некоторые юристы полагают, что для этого достаточно лишь составить иск (отзыв на него) и подобрать доказательства. Конечно, это иногда может сработать, но только в отношении обычных (типовых) дел. Однако как быть, если обстоятельства неоднозначны, а у судов нет однообразной практики? В таком случае, результат дела зависит только от грамотного поведения профессионального юриста в суде.
+                    </p>
+                    <p>
+                        Даже квалифицированному юристу при ожидании в здании суда легко потерять эмоциональный настрой и перегореть. Что же говорить об обывателе, который доведет себя до такой степени накала, что опустошит себя изнутри. Тем более именно так это и произойдет, если у него было долгое и самостоятельное приготовление к делу, и он боится публично выступать или нерешительно себя при этом чувствует.
+                        Одна из основных ошибок обывателя – это споры непосредственно с оппонентом как до начала процесса, так и после его окончания.
+                    </p>
+                    <p>
+                        Профессиональные юристы идут в процесс, чтобы убедить там лишь одну, но главную фигуру - судью! В деле имеют значение все нюансы.
+                        Наши юристы ведут себя в процессе ни только активно. Мы грамотно и тезисно выстраиваем своё выступление делая акцент на уязвимых местах в позиции оппонента.
+                    </p>
+                    <p>
+                        Поскольку в нашей практике имеются успешные кейсы, то пользуемся сильными их местами. Поэтому мы формируем тактику и стратегию ведения дела опираясь на весь процесс. Насколько будет возможно, мы облегчим работу судьи. Например, если понадобится, мы самостоятельно подготовим проект решения. Мы знаем немало нестандартных приемов, которые успешно работают в суде.
+                        Поэтому обратитесь к нам и получите эффективное судебное представительство!
+                    </p>
+
+                </div>
+                <a href="#"
+                   data-open="ПОДРОБНЕЕ..."
+                   data-close="СВЕРНУТЬ"
+                   class="button--gradient inform-section__button">
+                    ПОДРОБНЕЕ...
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section help-section" id="help" style="background-color: #fffcf6;">
+        <div class="container">
+            <div class="help">
+                <h3 class="section__title help__title">
+                    В ЧЁМ МЫ РЕАЛЬНО ПОМОГАЕМ?
+                </h3>
+                <ul class="help-list">
+                    <li class="help-list__item">
+                        <div class="help-list__icon">
+                            <img src="img/h1.png" alt="">
+                        </div>
+                        <div class="help-list__title">
+                            Подготовка и направление претензии
+                        </div>
+                        <div class="help-list__text">
+                            Представим ваши интересы в суде, приведём обоснованные доводы и представим нужные доказательства для решения спора в вашу пользу.
+                        </div>
+                    </li>
+                    <li class="help-list__item">
+                        <div class="help-list__icon">
+                            <img src="img/h2.png" alt="">
+                        </div>
+                        <div class="help-list__title">
+                            Подготовка и подача иска в суд
+                        </div>
+                        <div class="help-list__text">
+                            Представим ваши интересы в суде, приведём обоснованные доводы и представим нужные доказательства для решения спора в вашу пользу.
+                        </div>
+                    </li>
+                    <li class="help-list__item">
+                        <div class="help-list__icon">
+                            <img src="img/h3.png" alt="">
+                        </div>
+                        <div class="help-list__title">
+                            Разъяснение о тактике поведения в судебном заседании
+                        </div>
+                        <div class="help-list__text">
+                            Представим ваши интересы в суде, приведём обоснованные доводы и представим нужные доказательства для решения спора в вашу пользу.
+                        </div>
+                    </li>
+                    <li class="help-list__item">
+                        <div class="help-list__icon">
+                            <img src="img/h4.png" alt="">
+                        </div>
+                        <div class="help-list__title">
+                            Наша защита в суде
+                        </div>
+                        <div class="help-list__text">
+                            Представим ваши интересы в суде, приведём обоснованные доводы и представим нужные доказательства для решения спора в вашу пользу.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
 
 </main>
 
@@ -365,9 +403,15 @@
     <div class="footer-bottom" style="background-color: #fff;">
         <div class="container">
             <div class="footer-bottom-container">
-                <a href="/" class="footer-logo logo">
-                    <img src="img/logo.png" alt="">
-                </a>
+                <div class="footer-bottom-left">
+                    <a href="/" class="footer-logo logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="footer-number">
+                        ИНН 5504224464
+                    </div>
+                </div>
+
                 <div class="footer-bottom-text">
                     <p>
                         Вся информация представлена на сайте в ознакомительных целях и не является публичной офертой.
@@ -425,54 +469,7 @@
     </button>
 
 </form>
-
-<form
-        action="mail.php"
-        class="modal form modal-consult"
-        id="modal-consult"
-        style="background-color: #fff;"
-        novalidate
->
-
-    <input type="hidden" name="project_name" value="project_name">
-    <input type="hidden" name="admin_email" value="admin_email">
-    <input type="hidden" name="form_subject" value="form_subject">
-
-    <h6 class="modal-consult__title">
-        СЕМЕЙНЫЕ СПОРЫ
-    </h6>
-
-    <div class="modal-consult__text text">
-        <p>
-            К сожалению, отношения некоторых людей приходят к точке невозврата. Мы готовы быть громоотводом, чтобы оградить от излишних переживаний.
-        </p>
-    </div>
-
-    <a href="#" class="button button--gradient modal-consult__link">ПОДРОБНЕЕ</a>
-
-    <textarea class="modal-consult__textarea" placeholder="Для бесплатной консультации опишите вашу ситуацию"></textarea>
-
-    <label class="conditions-form__label modal-consult__label">
-        <span class="conditions-form__img">
-            <img src="img/phone-img.png" alt="">
-        </span>
-        <input required type="tel" class="conditions-form__input modal-consult__input" name="Телефон" placeholder="">
-    </label>
-
-    <button class="button button--gradient modal-consult__button">ЗАДАТЬ ВОПРОС</button>
-
-    <label class="conditions-form__container">
-        <input type="checkbox" checked class="conditions-form__checkbox">
-        <span></span>
-        <p>
-            Я соглашаюсь с политикой конфиденципльности
-        </p>
-    </label>
-
-</form>
-
 </body>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD41ju8fEBULLIEGvSODoqTUIGcX5nQxA4&amp;"></script>
 <script src="js/bundle.js"></script>
 
 </html>
