@@ -56,7 +56,18 @@ class Application {
             ]
         });
 
-        $('input[type="tel"]').mask("+7(999) 999-9999");
+        $('input[type="tel"]').each(function () {
+            const $t = $(this);
+            const p = $t.attr('placeholder');
+
+            if(p.length == 0) {
+                $t.attr('placeholder', "+7(___) ___-____");
+            }
+
+            $t.mask("+7(999) 999-9999");
+
+
+        });
 
     };
 
@@ -322,6 +333,8 @@ class Application {
             $wrappper.find(`.get-help-tabs__content[data-id="${id}"]`).addClass('active');
 
         });
+
+        $('input[type="checkbox"]').removeAttr('checked');
 
     }
 

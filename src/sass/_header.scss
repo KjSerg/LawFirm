@@ -118,6 +118,10 @@
         &:hover {
           ul.header-navigation__submenu {
             top: 100%;
+            width: max-content;
+            @media (max-width: 750px) {
+              width: 100%;
+            }
           }
         }
       }
@@ -265,10 +269,12 @@ ul.header-navigation__submenu {
 
   li {
     padding: 0;
+    width: 100%;
   }
 
   a {
     display: inline-block;
+    width: 100%;
     padding: 1rem 2rem;
     text-align: center;
 
